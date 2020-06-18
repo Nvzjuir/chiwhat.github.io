@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>今天吃什么呢？</title>
+    <link href="../css/style.css" rel="stylesheet"  media="screen"/>
+    <script src="../src/style.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	</head>
+	<body>
+    <div class="container">
+      <div class="title">
+        <text>今天想吃什么呢？</text>
+      </div>
+      <div class="main">
+        <div class="plug">
+          <span style="font-size: 30px; cursor:pointer;" onclick="eatHandle()">今天<span id="time"></span>吃<b id="what"></b>！</span>
+          <span><input value="开始" type="button" onclick="handleStart()" id="start"></input></span>
+          <span style="cursor:pointer;" title="编辑菜单" onClick="showMenu()">{ 自定义候选菜单 }</span>
+          <div id="menu" class="menu">
+            <div class="menu_title">菜单</div>
+            <div class="menu_main">
+              <textarea id="food" name="food"></textarea>
+            </div>
+            <div class="menu_btn">
+              <button onClick="hiddenMenu()">保存</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>

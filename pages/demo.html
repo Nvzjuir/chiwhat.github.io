@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<script>
+var btn=document.getElementsByTagName("input");
+for(var i=0;i<btn.length;i++){
+
+btn[i].index=i; //自定义属性，索引值
+
+btn[i].οnclick=function(){
+
+this.index; //可以记录索引值，直接写i的话，i会在加载后显示btn.length，无法单独记录
+
+}
+console.log(btn)
+}
+</script>
+</head>
+<body>
+  <input abc=123 xyz=true type="button" value="按钮"/>
+</body>
+</html>
